@@ -1,66 +1,127 @@
 \documentclass[letter, 11pt]{article}
+
 \usepackage[hmargin=2cm,vmargin=2cm]{geometry}
 \thispagestyle{empty}
+
+\newcommand{\job}[5]{
+  \parbox[l]{\textwidth}{
+    \large \textbf{#1} \makebox[3in][r]{\small #2; #3}
+    \textit{#4-}
+    \begin{itemize}
+      #5
+    \end{itemize}
+  }
+  \vspace{0.4cm}\\
+}
+
+\newcommand{\heading}[1]{\Large \textbf{#1} \vspace{0.4cm}
+
 \begin{document}
 
 \textheight=11in
 \flushleft
 
-\LARGE\textbf{Curriculum Vitae \hspace{6.8cm} Anthea Cheung\\} \vspace{-1.65cm}
+{\LARGE \textbf{Anthea Cheung}}
 
-\vspace{2.5cm}
+\vspace{1.0cm}
+
+\heading{Education}
 
 
-\Large \textbf{Education} \vspace{0.3cm}\\
-\large \textbf{Boston University}\\
-MA in Mathematics, 2015\\
-PhD. student in Mathematics, 2013- present
-\vspace{0.4cm}\\
-
-\large \textbf{Wellesley College} \\
-B.A. in Mathematics, minor in Computer Science, May 2012.\\
-Phi Beta Kappa, \textit{magna cum laude}.
-\vspace{0.4cm}\\
-
-\Large \textbf{Experience}\vspace{0.4cm}\\
-
-\parbox[l]{\textwidth}{
-\large \textbf{Boston University Mathematics Department} \makebox[3in][r]{\small Boston, MA; 2013-present}
-\textit{Teaching Fellow- }Led weekly discussions to help students understand material that are introduced in lecture. Provided one-on-one assistance to students during office hours. Worked with other teaching fellows and faculty members to organize and grade exam materials. 
+\job{Boston University}
+    {Boston, MA}
+    {2013---present}
+    {PhD student in Mathematics}{
+    \item Researching ...
+    \item Relevant coursework:
 }
-\vspace{0.4cm}\\
-\large \textbf{Program in Mathematics for Young Scientists}\makebox[3.1in] [r]{\small Boston, MA; Summer 2014, 2015}
-\textit{T$^2$- }
-Guided middle school and high school teachers in completing daily problem sets on number theory. Encouraged participants to actively engage with mathematical concepts. Assessed participants' progress and aided program director in creating an immersive environment for creative mathematical dialogue.
 
-  \vspace{0.4cm}\\
-\parbox[l]{\textwidth}{
-\large \textbf{Nuance Communications} \makebox[4.6in][r]{\small Cambridge, MA; 2012-2013}
-\textit{Natural Language Processing Research Engineer- } Developed and supporting natural language understanding technology for advanced multilingual spoken language applications. Trained machine learning tools to process user data. Analyzed language models to find solutions to accuracy issues, and supported research scientists in maintaining software tools.  
+%% \job{Boston University}
+%%     {Boston, MA}
+%%     {2013-2015}
+%%     {MA in Mathematics}
+%%     {}
+
+\job{IMA Math-to-Industry Bootcamp}
+    {Minneapolis, MN}
+    {Summer 2016}
+    {Camper}
+    {
+talk about the IMA here
 }
-\vspace{0.4cm}\\
 
-\parbox[l]{\textwidth}{
-\large \textbf{ID$^3$} \makebox[6.5in][r]{\small Cambridge, MA; Summer 2012}
-\textit{Project Consultant- }
-Conducted analysis of an economic model of stakeholders and actors in personal data marketplace. Assisted in developing a simulation for running scenarios, testing hypotheses, and developing policy suggestions for the big data economy.
+\job{Wellesley College}
+    {Wellesley, MA}
+    {2008---2012}
+    {B.A. in Mathematics \textit{magna cum laude}, minor in Computer Science}{
+    \item X.XX / 4.00
+    \item Phi Beta Kappa
 }
-\vspace{0.4cm}\\
 
-\Large \textbf{Publications}
-\vspace{0.4cm}\\
+\heading{Work Experience}
+
+\job{Nuance Communications}
+    {Cambridge, MA}
+    {2012-2013}
+    {Natural Language Processing Research Engineer}{
+    \item Trained statistical speech-models for multilingual voice-activated
+      assistants
+    \item Developed and applied quality control metrics to the aforementioned
+      models
+    \item Maintained machine learning software tools in tandem with research
+      scientists
+    \item Assessed and reported, to the CTO of Nuance, on the performance
+      characteristics of a new speech recognition tool
+    }
+
+\heading{Projects}
+
+put some projects here
+
+\heading{Skills}
+
+\begin{itemize}
+\item Proficiency with Python, R, and Java
+\item Experience using X, Y, and Z libraries
+\item Fluent in English, Cantonese, and Mandarin. Proficient in French
+\end{itemize}
+
+%% \job{ID$^3$}
+%%     {Cambridge, MA}
+%%     {Summer 2012}
+%%     {Project Consultant}{
+%%     \item Conducted analysis of an economic model of stakeholders and actors in personal data marketplace
+%%     \item Assisted in developing a simulation for running scenarios, testing hypotheses, and developing policy suggestions for the big data economy
+%% }
+
+\heading{Teaching Experience}
+
+\job{Boston University Mathematics Department}
+    {Boston, MA}
+    {2013---present}
+    {Teaching Fellow}{
+    \item Plan, prepare, and lead lecture-specific discussions to solidify
+      students' understanding
+    \item Mentor and advise students one-on-one during office hours
+    \item Design and administer student assessments in cooperation with the
+      faculty and manage undergraduate grading teams
+}
+
+\job{PROMYS for Teachers}
+    {Boston, MA}
+    {Summer 2014, 2015}
+    {Mentor to secondary-school mathematics teachers}{
+    \item Transform frustration and recalcitrance into learning and deeper insight
+    \item Constructively critique participants' process and presentation
+      %% formulated questions to inspire and drive future work
+    \item Encourage and develop intuition for abstraction and generation of
+      counter-examples in participants
+}
+
+\heading{Publications}
+
 \normalsize
 Ding Liu, \textbf{Anthea Cheung}, Anna Margolis, Patrick Redmond, Jun-won Suh, Chao Wang: Data driven methods for utterance semantic tagging. INTERSPEECH 2013: 2068-2070.
 \vspace{0.4cm}\\
-
-\Large \textbf{Skills and Interests}
-\vspace{0.4cm}\\
-\normalsize
-\begin{itemize}
-\item Knowledge of Java, Python, and R.
-\item Fluent in English, Cantonese, and Mandarin. Proficient in French.
-  
-\end{itemize}
-
 
 \end{document}
