@@ -1,0 +1,127 @@
+\documentclass[letter, 11pt]{article}
+
+\usepackage[hmargin=2cm,vmargin=2cm]{geometry}
+\thispagestyle{empty}
+
+\newcommand{\job}[5]{
+  \parbox[l]{\textwidth}{
+    \large \textbf{#1} \makebox[3in][r]{\small #2; #3}
+    \textit{#4-}
+    \begin{itemize}
+      #5
+    \end{itemize}
+  }
+  \vspace{0.4cm}\\
+}
+
+\newcommand{\heading}[1]{\Large \textbf{#1} \vspace{0.4cm}
+
+\begin{document}
+
+\textheight=11in
+\flushleft
+
+{\LARGE \textbf{Anthea Cheung}}
+
+\vspace{1.0cm}
+
+\heading{Education}
+
+
+\job{Boston University}
+    {Boston, MA}
+    {2013---present}
+    {PhD student in Mathematics}{
+    \item Researching ...
+    \item Relevant coursework:
+}
+
+%% \job{Boston University}
+%%     {Boston, MA}
+%%     {2013-2015}
+%%     {MA in Mathematics}
+%%     {}
+
+\job{IMA Math-to-Industry Bootcamp}
+    {Minneapolis, MN}
+    {Summer 2016}
+    {Camper}
+    {
+talk about the IMA here
+}
+
+\job{Wellesley College}
+    {Wellesley, MA}
+    {2008---2012}
+    {B.A. in Mathematics \textit{magna cum laude}, minor in Computer Science}{
+    \item X.XX / 4.00
+    \item Phi Beta Kappa
+}
+
+\heading{Work Experience}
+
+\job{Nuance Communications}
+    {Cambridge, MA}
+    {2012-2013}
+    {Natural Language Processing Research Engineer}{
+    \item Trained statistical speech-models for multilingual voice-activated
+      assistants
+    \item Developed and applied quality control metrics to the aforementioned
+      models
+    \item Maintained machine learning software tools in tandem with research
+      scientists
+    \item Assessed and reported, to the CTO of Nuance, on the performance
+      characteristics of a new speech recognition tool
+    }
+
+\heading{Projects}
+
+put some projects here
+
+\heading{Skills}
+
+\begin{itemize}
+\item Proficiency with Python, R, and Java
+\item Experience using X, Y, and Z libraries
+\item Fluent in English, Cantonese, and Mandarin. Proficient in French
+\end{itemize}
+
+%% \job{ID$^3$}
+%%     {Cambridge, MA}
+%%     {Summer 2012}
+%%     {Project Consultant}{
+%%     \item Conducted analysis of an economic model of stakeholders and actors in personal data marketplace
+%%     \item Assisted in developing a simulation for running scenarios, testing hypotheses, and developing policy suggestions for the big data economy
+%% }
+
+\heading{Teaching Experience}
+
+\job{Boston University Mathematics Department}
+    {Boston, MA}
+    {2013---present}
+    {Teaching Fellow}{
+    \item Plan, prepare, and lead lecture-specific discussions to solidify
+      students' understanding
+    \item Mentor and advise students one-on-one during office hours
+    \item Design and administer student assessments in cooperation with the
+      faculty and manage undergraduate grading teams
+}
+
+\job{PROMYS for Teachers}
+    {Boston, MA}
+    {Summer 2014, 2015}
+    {Mentor to secondary-school mathematics teachers}{
+    \item Transform frustration and recalcitrance into learning and deeper insight
+    \item Constructively critique participants' process and presentation
+      %% formulated questions to inspire and drive future work
+    \item Encourage and develop intuition for abstraction and generation of
+      counter-examples in participants
+}
+
+\heading{Publications}
+
+\normalsize
+Ding Liu, \textbf{Anthea Cheung}, Anna Margolis, Patrick Redmond, Jun-won Suh, Chao Wang: Data driven methods for utterance semantic tagging. INTERSPEECH 2013: 2068-2070.
+\vspace{0.4cm}\\
+
+\end{document}
